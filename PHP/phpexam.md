@@ -15,7 +15,6 @@
 <body>
 <?php
     echo 'Hello PHP World!' . "\n";
-?>
 </body>
 ```
 
@@ -36,7 +35,6 @@ echo "Hello, $str"; // Hello World!
 echo 'Hello, $str'; // Hello $str
 // " "の変数展開は区別しにくいので{ }で括るとわかりやすい
 echo "Hello,{$str}"; // Hello World!
-?>
 ```
 
 ### printf()はフォーマットされた文字列を出力する[*](https://www.php.net/manual/ja/function.printf.php)
@@ -47,7 +45,6 @@ $price = 5;
 $off = 0.79;
 
 printf('Price : $%.2f', $price - $off); // Price$4.21
-?>
 ```
 
 ### 文字関連の関数(1)
@@ -74,7 +71,6 @@ echo str_replace('aaa','AAA',$string); //   AAAbbb $string変数のaaaをAAAに�
 
 // 文字列の前後の空白を取り除く
 echo trim($string); // AAAbbb 前後の空白を取り除く
-?>
 ```
 
 ### 文字関連の関数(2)
@@ -89,7 +85,6 @@ print ucwords(strtolower('SATO ICHIRO')); // Sato Ichiro
 
 print strtolower('SATO ICHIRO'); // 1 sato ichiro
 print ucwords('sato ichiro'); // 2 Sato Ichiro
-?>
 ```
 
 ### 文字列結合演算子「.」
@@ -97,7 +92,6 @@ print ucwords('sato ichiro'); // 2 Sato Ichiro
 ```PHP
 <?php
 print 1 * 8 . 3 * 4; // (1 * 8) をして、(3 * 4)をして文字列結合 812
-?>
 ```
 
 ### 変数名の指定
@@ -116,7 +110,6 @@ print 'Hello' == 'Hello'; // true(1)
 print 'Hello' == 'HELLO'; // false 表示なし
 print strcasecmp('Hello' , 'Hello'); // 一致:0
 print strcasecmp('Hello','HELLO'); // 一致:0
-?>
 ```
 
 ### ヒアドキュメント
@@ -130,7 +123,6 @@ echo "Print string1 : \"PHP\" <br>";
 echo <<<_DATA_
 Print string2 : "PHP" <br>
 _DATA_;
-?>
 ```
 
 ### ++演算子, --演算子 代入演算子
@@ -150,7 +142,6 @@ $number += 4; // 10
 $number += 5; // 15
 ++$number; // 16
 print 'number : ' . $number; // number : 16
-?>
 ```
 
 ## 3.ロジック：判定と繰り返し
@@ -198,8 +189,6 @@ if(4-7+3){
 }else{
     print false; // 0なのでfalse
 }
-?>
-
 ```
 
 ### 等価演算子
@@ -223,7 +212,6 @@ if($data == 10){
 if($data === 10){
     print "2"; // データ型が一致しないので表示されない
 }
-?>
 ```
 
 ### abs()関数
@@ -242,7 +230,6 @@ if("abc" > "xyz"){
 }elseif("567" < "890"){
     print "CCC"; // 「567」<「890」の比較し、trueなので表示
 }
-?>
 ```
 
 ### 文字列と数値の比較[*](https://zenn.dev/ymkn8crz/articles/361492876c2c56)
