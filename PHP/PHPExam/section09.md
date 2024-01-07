@@ -64,4 +64,3 @@ if($file === false){
     echo 'Coluld not read this file';
 }
 ```
-
